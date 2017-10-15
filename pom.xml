@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.scijava</groupId>
+        <artifactId>pom-scijava</artifactId>
+        <version>17.1.1</version>
+    </parent>
+
+    <groupId>net.haesleinhuepf</groupId>
+    <artifactId>ClearSciJavaPom</artifactId>
+    <version>0.4.0</version>
+    <packaging>pom</packaging>
+
+    <name>ClearSciJavaPom</name>
+    <description>This pom serves as parent for projects using SciJava,
+        Image and ClearCL stuff
+    </description>
+    <url>https://github.com/haesleinhuepf/ClearSciJavaPom</url>
+    <inceptionYear>2017</inceptionYear>
+    <organization>
+        <name>Haesleinhuepf</name>
+        <url>http://haesleinhuepf.net</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>Simplified BSD License</name>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>haesleinhuepf</id>
+            <name>Robert Haase</name>
+            <url>http://haesleinhuepf.net</url>
+            <roles>
+                <role>founder</role>
+                <role>lead</role>
+                <role>developer</role>
+                <role>debugger</role>
+                <role>reviewer</role>
+                <role>support</role>
+                <role>maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>none</name>
+        </contributor>
+    </contributors>
+
+    <mailingLists>
+        <mailingList>
+            <name>ImageJ Forum</name>
+            <archive>http://forum.imagej.net/</archive>
+        </mailingList>
+    </mailingLists>
+
+    <scm>
+        <connection>scm:git:git://github.com/haesleinhuepf/ClearSciJavaPom</connection>
+        <developerConnection>scm:git:git@github.com/haesleinhuepf/ClearSciJavaPom</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/haesleinhuepf/ClearSciJavaPom</url>
+    </scm>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/haesleinhuepf/ClearSciJavaPom/issues
+        </url>
+    </issueManagement>
+    <ciManagement>
+        <system>None</system>
+    </ciManagement>
+
+    <properties>
+        <package-name>net.haesleinhuepf</package-name>
+        <license.licenseName>bsd_3</license.licenseName>
+        <license.copyrightOwners>Robert Haase
+        </license.copyrightOwners>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>sonatype</id>
+            <url>http://oss.sonatype.org/content/groups/public</url>
+        </repository>
+        <repository>
+            <id>mvnrepo</id>
+            <url>http://mvnrepository.com/artifact</url>
+        </repository>
+        <repository>
+            <id>imagej.releases</id>
+            <url>
+                http://maven.imagej.net/content/repositories/releases
+            </url>
+        </repository>
+        <repository>
+            <id>imagej.snapshots</id>
+            <url>
+                http://maven.imagej.net/content/repositories/snapshots
+            </url>
+        </repository>
+        <repository>
+            <id>clearcontrolbintray</id>
+            <url>http://dl.bintray.com/clearcontrol/ClearControl</url>
+        </repository>
+        <repository>
+            <id>jocl</id>
+            <url>https://mvnrepository.com/artifact/org.jocl/jocl
+            </url>
+        </repository>
+        <repository>
+            <id>unidata</id>
+            <url>
+                https://artifacts.unidata.ucar.edu/content/repositories/unidata-releases
+            </url>
+        </repository>
+        <repository>
+            <id>ome</id>
+            <url>
+                http://artifacts.openmicroscopy.org/artifactory/maven/
+            </url>
+        </repository>
+        <repository>
+            <id>clearvolumebintray</id>
+            <url>http://dl.bintray.com/clearvolume/ClearVolume</url>
+        </repository>
+        <repository>
+            <id>jfxtras</id>
+            <url>
+                https://mvnrepository.com/artifact/org.jfxtras/jfxtras-labs
+            </url>
+        </repository>
+        <repository>
+            <id>jerady</id>
+            <url>http://dl.bintray.com/jerady/maven</url>
+        </repository>
+        <repository>
+            <id>squeazy</id>
+            <url>http://dl.bintray.com/sqeazy/maven</url>
+        </repository>
+        <repository>
+            <id>oss.sonatype</id>
+            <url>http://oss.sonatype.org/content/groups/public</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.clearcontrol</groupId>
+            <artifactId>ClearControl-lightsheet</artifactId>
+            <version>1.0.7</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>net.clearcontrol</groupId>
+                    <artifactId>ClearControl</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>net.clearcontrol</groupId>
+            <artifactId>ClearControl</artifactId>
+            <version>0.9.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.googlecode.efficient-java-matrix-library</groupId>
+                    <artifactId>ejml</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>io.scif</groupId>
+                    <artifactId>pom-scifio</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.efficient-java-matrix-library</groupId>
+            <artifactId>ejml</artifactId>
+            <version>0.25</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+
+                <version>1.4.1</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,1 @@
+This pom serves as parent for projects using SciJava, Image and ClearCL stuff
