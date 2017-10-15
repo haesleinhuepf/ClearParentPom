@@ -13,7 +13,7 @@
 
     <groupId>net.haesleinhuepf</groupId>
     <artifactId>ClearSciJavaPom</artifactId>
-    <version>0.4.0</version>
+    <version>0.5.0</version>
     <packaging>pom</packaging>
 
     <name>ClearSciJavaPom</name>
@@ -63,8 +63,12 @@
     </mailingLists>
 
     <scm>
-        <connection>scm:git:git://github.com/haesleinhuepf/ClearSciJavaPom</connection>
-        <developerConnection>scm:git:git@github.com/haesleinhuepf/ClearSciJavaPom</developerConnection>
+        <connection>
+            scm:git:git://github.com/haesleinhuepf/ClearSciJavaPom
+        </connection>
+        <developerConnection>
+            scm:git:git@github.com/haesleinhuepf/ClearSciJavaPom
+        </developerConnection>
         <tag>HEAD</tag>
         <url>https://github.com/haesleinhuepf/ClearSciJavaPom</url>
     </scm>
@@ -150,39 +154,60 @@
         </repository>
     </repositories>
 
-    <dependencies>
-        <dependency>
-            <groupId>net.clearcontrol</groupId>
-            <artifactId>ClearControl-lightsheet</artifactId>
-            <version>1.0.7</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>net.clearcontrol</groupId>
-                    <artifactId>ClearControl</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>net.clearcontrol</groupId>
-            <artifactId>ClearControl</artifactId>
-            <version>0.9.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.googlecode.efficient-java-matrix-library</groupId>
-                    <artifactId>ejml</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>io.scif</groupId>
-                    <artifactId>pom-scifio</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.googlecode.efficient-java-matrix-library</groupId>
-            <artifactId>ejml</artifactId>
-            <version>0.25</version>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>ClearControl-lightsheet</artifactId>
+                <version>1.0.7</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>net.clearcontrol</groupId>
+                        <artifactId>ClearControl</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>ClearControl</artifactId>
+                <version>0.9.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>
+                            com.googlecode.efficient-java-matrix-library
+                        </groupId>
+                        <artifactId>ejml</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>io.scif</groupId>
+                        <artifactId>pom-scifio</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>
+                    com.googlecode.efficient-java-matrix-library
+                </groupId>
+                <artifactId>ejml</artifactId>
+                <version>0.25</version>
+            </dependency>
+            <dependency>
+                <groupId>net.haesleinhuepf</groupId>
+                <artifactId>ClearUtilities</artifactId>
+                <version>0.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.scijava</groupId>
+                <artifactId>scijava-common</artifactId>
+                <version>2.66.0</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearvolume</groupId>
+                <artifactId>ClearCL</artifactId>
+                <version>0.5.2</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
