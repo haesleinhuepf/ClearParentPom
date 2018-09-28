@@ -13,7 +13,7 @@
 
     <groupId>net.clearcontrol</groupId>
     <artifactId>ClearParentPom</artifactId>
-    <version>0.6.0</version>
+    <version>0.6.8</version>
     <packaging>pom</packaging>
 
     <name>ClearParentPom</name>
@@ -158,6 +158,16 @@
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>halcyon</artifactId>
                 <version>0.3.7</version>
+                <exclusions>
+                    <exclusion>
+                        <!-- todo: fix dependency tree behind net.clearcontrol:halcyon.
+                         Apparently it depends on org.dockfx.DockFX
+                         However, it should instead depend on net.clearcontrol.dockfx
+                         -->
+                        <groupId>org.dockfx</groupId>
+                        <artifactId>DockFX</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
@@ -187,27 +197,27 @@
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearclij</artifactId>
-                <version>0.3.19</version>
+                <version>0.3.20</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol</artifactId>
-                <version>0.16.14</version>
+                <version>0.17.1-m</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol-lightsheet</artifactId>
-                <version>1.29.0</version>
+                <version>1.30.2-m</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol-lightsheet-csbd</artifactId>
-                <version>0.0.3</version>
+                <version>0.1.2-m</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
-                <artifactId>XWing</artifactId>
-                <version>1.0.33</version>
+                <artifactId>R2D2XWing</artifactId>
+                <version>1.1.1</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
@@ -316,6 +326,9 @@
                 <directory>src/main/java</directory>
                 <includes>
                     <include>**/*.cl</include>
+                    <include>**/*.png</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.css</include>
                 </includes>
             </resource>
             <!--<resource>-->
