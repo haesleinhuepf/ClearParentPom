@@ -1,1 +1,1 @@
-This pom serves as parent for projects using SciJava, Image and ClearCL stuff
+This pom serves as parent for projects using SciJava, ImageJ, ClearCL, ClearVolume and ClearControl libraries

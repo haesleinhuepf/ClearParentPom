@@ -8,19 +8,18 @@
     <parent>
         <groupId>org.scijava</groupId>
         <artifactId>pom-scijava</artifactId>
-        <version>17.1.1</version>
+        <version>23.2.0</version>
     </parent>
 
-    <groupId>net.haesleinhuepf</groupId>
-    <artifactId>ClearSciJavaPom</artifactId>
-    <version>0.5.0</version>
+    <groupId>net.clearcontrol</groupId>
+    <artifactId>ClearParentPom</artifactId>
+    <version>0.6.0</version>
     <packaging>pom</packaging>
 
-    <name>ClearSciJavaPom</name>
-    <description>This pom serves as parent for projects using SciJava,
-        Image and ClearCL stuff
+    <name>ClearParentPom</name>
+    <description>This pom serves as parent for projects using SciJava, ImageJ, ClearCL, ClearVolume and ClearControl libraries
     </description>
-    <url>https://github.com/haesleinhuepf/ClearSciJavaPom</url>
+    <url>https://github.com/haesleinhuepf/ClearParentPom</url>
     <inceptionYear>2017</inceptionYear>
     <organization>
         <name>Haesleinhuepf</name>
@@ -64,17 +63,17 @@
 
     <scm>
         <connection>
-            scm:git:git://github.com/haesleinhuepf/ClearSciJavaPom
+            scm:git:git://github.com/haesleinhuepf/ClearParentPom
         </connection>
         <developerConnection>
-            scm:git:git@github.com/haesleinhuepf/ClearSciJavaPom
+            scm:git:git@github.com/haesleinhuepf/ClearParentPom
         </developerConnection>
         <tag>HEAD</tag>
-        <url>https://github.com/haesleinhuepf/ClearSciJavaPom</url>
+        <url>https://github.com/haesleinhuepf/ClearParentPom</url>
     </scm>
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/haesleinhuepf/ClearSciJavaPom/issues
+        <url>https://github.com/haesleinhuepf/ClearParentPom/issues
         </url>
     </issueManagement>
     <ciManagement>
@@ -87,6 +86,147 @@
         <license.copyrightOwners>Robert Haase
         </license.copyrightOwners>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.googlecode.efficient-java-matrix-library</groupId>
+                <artifactId>ejml</artifactId>
+                <version>0.25</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>coremem</artifactId>
+                <version>0.4.6</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>dockfx</artifactId>
+                <version>0.1.12</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearvolume</groupId>
+                <artifactId>cleargl</artifactId>
+                <version>2.2.1</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>clearaudio</artifactId>
+                <version>1.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>aptj</artifactId>
+                <version>0.0.5</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>asdkj</artifactId>
+                <version>1.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>mirao52j</artifactId>
+                <version>1.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>dmp40j</artifactId>
+                <version>0.1.0</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>nirioj</artifactId>
+                <version>1.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>andor</groupId>
+                <artifactId>andorsdkj</artifactId>
+                <version>0.2.2</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>ecc100j</artifactId>
+                <version>1.0.1</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>picard4dusbstage</artifactId>
+                <version>0.0.2</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>halcyon</artifactId>
+                <version>0.3.7</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>dcamj</artifactId>
+                <version>2.1.7</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>clearcl</artifactId>
+                <version>0.6.4-m</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>clearvolume</artifactId>
+                <version>1.4.2</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>simbryo</artifactId>
+                <version>0.9.1</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>fastfuse</artifactId>
+                <version>0.6.5</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>clearclij</artifactId>
+                <version>0.3.19</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>clearcontrol</artifactId>
+                <version>0.16.14</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>clearcontrol-lightsheet</artifactId>
+                <version>1.29.0</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>clearcontrol-lightsheet-csbd</artifactId>
+                <version>0.0.3</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>XWing</artifactId>
+                <version>1.0.33</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>BScope</artifactId>
+                <version>2.0.9</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>easyscopy</artifactId>
+                <version>0.1.20</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>R2D2</artifactId>
+                <version>0.1.7</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 
     <repositories>
         <repository>
@@ -112,6 +252,10 @@
         <repository>
             <id>clearcontrolbintray</id>
             <url>http://dl.bintray.com/clearcontrol/ClearControl</url>
+        </repository>
+        <repository>
+            <id>hslh</id>
+            <url>http://dl.bintray.com/haesleinhuepf/snapshots</url>
         </repository>
         <repository>
             <id>jocl</id>
@@ -154,60 +298,6 @@
         </repository>
     </repositories>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>net.clearcontrol</groupId>
-                <artifactId>ClearControl-lightsheet</artifactId>
-                <version>1.0.7</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>net.clearcontrol</groupId>
-                        <artifactId>ClearControl</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>net.clearcontrol</groupId>
-                <artifactId>ClearControl</artifactId>
-                <version>0.9.0</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>
-                            com.googlecode.efficient-java-matrix-library
-                        </groupId>
-                        <artifactId>ejml</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>io.scif</groupId>
-                        <artifactId>pom-scifio</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>
-                    com.googlecode.efficient-java-matrix-library
-                </groupId>
-                <artifactId>ejml</artifactId>
-                <version>0.25</version>
-            </dependency>
-            <dependency>
-                <groupId>net.haesleinhuepf</groupId>
-                <artifactId>ClearUtilities</artifactId>
-                <version>0.2.0</version>
-            </dependency>
-            <dependency>
-                <groupId>org.scijava</groupId>
-                <artifactId>scijava-common</artifactId>
-                <version>2.66.0</version>
-            </dependency>
-            <dependency>
-                <groupId>net.clearvolume</groupId>
-                <artifactId>ClearCL</artifactId>
-                <version>0.5.2</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
     <build>
         <plugins>
@@ -221,5 +311,33 @@
                 </configuration>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.cl</include>
+                </includes>
+            </resource>
+            <!--<resource>-->
+            <!--<directory>src/main/java/resources</directory>-->
+            <!--<includes>-->
+            <!--<include>**/*.*</include>-->
+            <!--</includes>-->
+            <!--</resource>-->
+        </resources>
+
     </build>
+
+
+    <distributionManagement>
+
+        <repository>
+            <id>bintray-haesleinhuepf-snapshots</id>
+            <name>bintray-snapshots</name>
+            <url>https://api.bintray.com/maven/haesleinhuepf/snapshots/clearclij/;publish=1</url>
+        </repository>
+
+    </distributionManagement>
+
+
 </project>
