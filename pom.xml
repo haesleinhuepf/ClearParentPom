@@ -13,7 +13,7 @@
 
     <groupId>net.clearcontrol</groupId>
     <artifactId>ClearParentPom</artifactId>
-    <version>0.6.9</version>
+    <version>0.6.17</version>
     <packaging>pom</packaging>
 
     <name>ClearParentPom</name>
@@ -197,32 +197,22 @@
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearclij</artifactId>
-                <version>0.3.20</version>
+                <version>0.3.24</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol</artifactId>
-                <version>0.17.1-m</version>
+                <version>0.17.6-m</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol-lightsheet</artifactId>
-                <version>1.30.2-m</version>
+                <version>1.30.7-m</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol-lightsheet-csbd</artifactId>
-                <version>0.1.2-m</version>
-            </dependency>
-            <dependency>
-                <groupId>net.clearcontrol</groupId>
-                <artifactId>R2D2XWing</artifactId>
-                <version>1.1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>net.clearcontrol</groupId>
-                <artifactId>BScope</artifactId>
-                <version>2.0.9</version>
+                <version>0.1.7-m</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -320,6 +310,7 @@
                     <include>**/*.properties</include>
                     <include>**/*.css</include>
                     <include>**/*.py</include>
+                    <include>**/*.glsl</include>
                 </includes>
             </resource>
             <!--<resource>-->
@@ -338,7 +329,7 @@
         <repository>
             <id>bintray-haesleinhuepf-snapshots</id>
             <name>bintray-snapshots</name>
-            <url>https://api.bintray.com/maven/haesleinhuepf/snapshots/clearclij/;publish=1</url>
+            <url>https://api.bintray.com/maven/haesleinhuepf/snapshots/ClearParentPom/;publish=1</url>
         </repository>
 
     </distributionManagement>
