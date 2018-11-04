@@ -13,7 +13,7 @@
 
     <groupId>net.clearcontrol</groupId>
     <artifactId>ClearParentPom</artifactId>
-    <version>0.6.21</version>
+    <version>0.6.22</version>
     <packaging>pom</packaging>
 
     <name>ClearParentPom</name>
@@ -323,6 +323,7 @@
                     <include>**/*.css</include>
                     <include>**/*.py</include>
                     <include>**/*.glsl</include>
+                    <include>**/*.fxml</include>
                 </includes>
             </resource>
             <!--<resource>-->
