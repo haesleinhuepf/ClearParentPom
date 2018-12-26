@@ -13,7 +13,7 @@
 
     <groupId>net.clearcontrol</groupId>
     <artifactId>ClearParentPom</artifactId>
-    <version>0.6.35</version>
+    <version>0.6.36</version>
     <packaging>pom</packaging>
 
     <name>ClearParentPom</name>
@@ -177,7 +177,7 @@
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcl</artifactId>
-                <version>0.6.5-m</version>
+                <version>0.6.8-m</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
