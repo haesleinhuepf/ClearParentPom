@@ -221,6 +221,12 @@
             </dependency>
 
             <dependency>
+                <groupId>de.mpicbg.rhaase</groupId>
+                <artifactId>postprocessing-utilities</artifactId>
+                <version>0.4.0</version>
+            </dependency>
+
+            <dependency>
                 <groupId>graphics.scenery</groupId>
                 <artifactId>scenery</artifactId>
                 <version>0.6.2</version>
