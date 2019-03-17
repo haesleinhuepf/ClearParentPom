@@ -13,7 +13,7 @@
 
     <groupId>net.clearcontrol</groupId>
     <artifactId>ClearParentPom</artifactId>
-    <version>0.8.2</version>
+    <version>0.8.3</version>
     <packaging>pom</packaging>
 
     <name>ClearParentPom</name>
@@ -201,17 +201,17 @@
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol</artifactId>
-                <version>0.17.6-m</version>
+                <version>0.17.7-m</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol-lightsheet</artifactId>
-                <version>1.34.0-m</version>
+                <version>1.34.1-m</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol-lightsheet-csbd</artifactId>
-                <version>0.3.0-m</version>
+                <version>0.3.1-m</version>
             </dependency>
 
             <dependency>
