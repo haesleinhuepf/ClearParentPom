@@ -13,7 +13,7 @@
 
     <groupId>net.clearcontrol</groupId>
     <artifactId>ClearParentPom</artifactId>
-    <version>0.8.3</version>
+    <version>0.8.4</version>
     <packaging>pom</packaging>
 
     <name>ClearParentPom</name>
@@ -223,7 +223,7 @@
             <dependency>
                 <groupId>de.mpicbg.rhaase</groupId>
                 <artifactId>postprocessing-utilities</artifactId>
-                <version>0.4.6</version>
+                <version>0.4.7</version>
             </dependency>
 
             <dependency>
