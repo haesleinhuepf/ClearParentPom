@@ -13,7 +13,7 @@
 
     <groupId>net.clearcontrol</groupId>
     <artifactId>ClearParentPom</artifactId>
-    <version>0.9.0</version>
+    <version>0.10.0</version>
     <packaging>pom</packaging>
 
     <name>ClearParentPom</name>
@@ -88,8 +88,8 @@
         <!-- core stuff -->
         <R2D2XWing.version>1.3.0</R2D2XWing.version>
         <clearcontrol.version>0.18.0-m</clearcontrol.version>
-        <clearcontrol_lightsheet.version>1.35.0-m</clearcontrol_lightsheet.version>
-        <clearcontrol_lightsheet_csbd.version>0.4.0-m</clearcontrol_lightsheet_csbd.version>
+        <clearcontrol_lightsheet.version>1.36.0-m</clearcontrol_lightsheet.version>
+        <clearcontrol_lightsheet_csbd.version>0.5.0-m</clearcontrol_lightsheet_csbd.version>
 
         <!-- hardware drivers / wrappers -->
         <aptj.version>0.0.5</aptj.version>
