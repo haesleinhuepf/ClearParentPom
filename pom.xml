@@ -13,7 +13,7 @@
 
     <groupId>net.clearcontrol</groupId>
     <artifactId>ClearParentPom</artifactId>
-    <version>0.7.0</version>
+    <version>0.9.0</version>
     <packaging>pom</packaging>
 
     <name>ClearParentPom</name>
@@ -84,6 +84,45 @@
         <package-name>net.haesleinhuepf</package-name>
         <license.licenseName>bsd_3</license.licenseName>
         <license.copyrightOwners>Robert Haase</license.copyrightOwners>
+
+        <!-- core stuff -->
+        <R2D2XWing.version>1.3.0</R2D2XWing.version>
+        <clearcontrol.version>0.18.0-m</clearcontrol.version>
+        <clearcontrol_lightsheet.version>1.35.0-m</clearcontrol_lightsheet.version>
+        <clearcontrol_lightsheet_csbd.version>0.4.0-m</clearcontrol_lightsheet_csbd.version>
+
+        <!-- hardware drivers / wrappers -->
+        <aptj.version>0.0.5</aptj.version>
+        <asdkj.version>1.0.2</asdkj.version>
+        <mirao52j.version>1.0.1</mirao52j.version>
+        <dmp40j.version>0.1.0</dmp40j.version>
+        <nirioj.version>1.0.2</nirioj.version>
+        <andorsdkj.version>0.2.2</andorsdkj.version>
+        <dcamj.version>2.1.7</dcamj.version>
+        <picard4dusbstage.version>0.0.4</picard4dusbstage.version>
+        <ecc100j.version>1.0.1</ecc100j.version>
+
+        <!-- GUI -->
+        <cleargl.version>2.2.1</cleargl.version>
+        <clearvolume.version>1.4.2</clearvolume.version>
+        <halcyon.version>0.3.7</halcyon.version>
+        <dockfx.version>0.1.12</dockfx.version>
+
+        <sciview.version>0.1.6</sciview.version>
+        <scenery.version>0.6.2</scenery.version>
+
+        <!-- GPU, RAM, postprocessing, simulation -->
+        <simbryo.version>0.9.1</simbryo.version>
+        <fastfuse.version>0.6.5</fastfuse.version>
+
+        <clij_.version>0.18.4</clij_.version>
+        <coremem.version>0.4.6</coremem.version>
+
+        <postprocessing_utilities.version>0.4.7</postprocessing_utilities.version>
+        <imagequalitymetrics_microscopeautopilot.version>0.1.2</imagequalitymetrics_microscopeautopilot.version>
+        <DAIS_wp13.version>1.1-m</DAIS_wp13.version>
+        <CSBDeep.version>0.2.1.1</CSBDeep.version>
+        <tensorflow.version>1.11.0</tensorflow.version>
     </properties>
 
     <dependencyManagement>
@@ -96,17 +135,17 @@
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>coremem</artifactId>
-                <version>0.4.6</version>
+                <version>${coremem.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>dockfx</artifactId>
-                <version>0.1.12</version>
+                <version>${dockfx.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearvolume</groupId>
                 <artifactId>cleargl</artifactId>
-                <version>2.2.1</version>
+                <version>${cleargl.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
@@ -116,47 +155,47 @@
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>aptj</artifactId>
-                <version>0.0.5</version>
+                <version>${aptj.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>asdkj</artifactId>
-                <version>1.0.2</version>
+                <version>${asdkj.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>mirao52j</artifactId>
-                <version>1.0.1</version>
+                <version>${mirao52j.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>dmp40j</artifactId>
-                <version>0.1.0</version>
+                <version>${dmp40j.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>nirioj</artifactId>
-                <version>1.0.2</version>
+                <version>${nirioj.version}</version>
             </dependency>
             <dependency>
                 <groupId>andor</groupId>
                 <artifactId>andorsdkj</artifactId>
-                <version>0.2.2</version>
+                <version>${andorsdkj.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>ecc100j</artifactId>
-                <version>1.0.1</version>
+                <version>${ecc100j.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>picard4dusbstage</artifactId>
-                <version>0.0.4</version>
+                <version>${picard4dusbstage.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>halcyon</artifactId>
-                <version>0.3.7</version>
+                <version>${halcyon.version}</version>
                 <exclusions>
                     <exclusion>
                         <!-- todo: fix dependency tree behind net.clearcontrol:halcyon.
@@ -171,7 +210,7 @@
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>dcamj</artifactId>
-                <version>2.1.7</version>
+                <version>${dcamj.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
@@ -181,55 +220,90 @@
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearvolume</artifactId>
-                <version>1.4.2</version>
+                <version>${clearvolume.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>simbryo</artifactId>
-                <version>0.9.1</version>
+                <version>${simbryo.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>fastfuse</artifactId>
-                <version>0.6.5</version>
-            </dependency>
-            <dependency>
-                <groupId>net.clearcontrol</groupId>
-                <artifactId>clearclij</artifactId>
-                <version>0.3.26</version>
+                <version>${fastfuse.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.haesleinhuepf</groupId>
                 <artifactId>clij_</artifactId>
-                <version>0.5.0</version>
+                <version>${clij_.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol</artifactId>
-                <version>0.17.6-m</version>
+                <version>${clearcontrol.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol-lightsheet</artifactId>
-                <version>1.33.0-m</version>
+                <version>${clearcontrol_lightsheet.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.clearcontrol</groupId>
                 <artifactId>clearcontrol-lightsheet-csbd</artifactId>
-                <version>0.3.0-m</version>
+                <version>${clearcontrol_lightsheet_csbd.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>sc.iview</groupId>
                 <artifactId>sciview</artifactId>
-                <version>0.1.6</version>
+                <version>${sciview.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.mpicbg.rhaase</groupId>
+                <artifactId>postprocessing-utilities</artifactId>
+                <version>${postprocessing_utilities.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.mpicbg.rhaase</groupId>
+                <artifactId>imagequalitymetrics-microscopeautopilot</artifactId>
+                <version>${imagequalitymetrics_microscopeautopilot.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>graphics.scenery</groupId>
                 <artifactId>scenery</artifactId>
-                <version>0.6.2</version>
+                <version>${scenery.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>de.mpicbg.ulman</groupId>
+                <artifactId>DAIS-wp13</artifactId>
+                <version>${DAIS_wp13.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.tensorflow</groupId>
+                <artifactId>tensorflow</artifactId>
+                <version>${tensorflow.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mpicbg.csbd</groupId>
+                <artifactId>CSBDeep</artifactId>
+                <version>${CSBDeep.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.twitter4j</groupId>
+                <artifactId>twitter4j-core</artifactId>
+                <version>4.0.7</version>
+            </dependency>
+            <dependency>
+                <groupId>net.clearcontrol</groupId>
+                <artifactId>R2D2XWing</artifactId>
+                <version>${R2D2XWing.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
